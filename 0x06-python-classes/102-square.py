@@ -1,9 +1,11 @@
 #!/usr/bin/python3
-
+""" 102-square.py : class Square"""
 
 class Square:
-    """Private instance attribute: size
-    Instantiation with area and position method """
+    """
+    Private instance attribute: size
+    Instantiation with area and position method
+    """
 
     def __init__(self, size=0):
         """Initializes attribute size """
@@ -50,4 +52,3 @@ class Square:
     def __ge__(self, other):
         """Greater than or equal"""
         return self.size >= other.size
-
