@@ -1,6 +1,7 @@
 #!/usr/bin/python3
 """ 102-square.py : class Square"""
 
+
 class Square:
     """
     Private instance attribute: size
