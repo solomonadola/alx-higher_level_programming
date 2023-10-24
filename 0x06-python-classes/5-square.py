@@ -35,3 +35,4 @@ class Square:
             print()
         if self.size <= 0:
             print()
+
