@@ -6,6 +6,7 @@ class Square:
     """
     Private instance attribute: size
     Instantiation with area and position method
+
     """
 
     def __init__(self, size=0, position=(0, 0)):
