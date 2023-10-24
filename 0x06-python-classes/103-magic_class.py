@@ -1,5 +1,5 @@
 #!/usr/bin/python3
-"""103-square.py : class MagicClass"""
+"""103-magic_class.py : class MagicClass"""
 
 import math
 
