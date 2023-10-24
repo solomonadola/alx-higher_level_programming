@@ -1,27 +1,43 @@
 #!/usr/bin/python3
+""" 6-square.py : class Square"""
 
 
 class Square:
-    """Private instance attribute: size
-    Instantiation with area and position method """
+    """
+    Private instance attribute: size
+    Instantiation with area and position method
+
+    """
 
     def __init__(self, size=0, position=(0, 0)):
-        """Initializes attribute size """
+        """
+        Initializes attribute size
+
+        """
         self.size = size
         self.position = position
 
     def area(self):
-        """Calculate area of square"""
+        """
+        Calculate area of square
+
+        """
         return (self.__size * self.__size)
 
     @property
     def size(self):
-        """Getter for square"""
+        """
+        Getter for square
+
+        """
         return self.__size
 
     @size.setter
     def size(self, value):
-        """Initializes attribute size """
+        """
+        Initializes attribute size
+
+        """
         if (type(value) is not int):
             raise TypeError("size must be an integer")
         if value < 0:
@@ -57,4 +73,3 @@ class Square:
                 for j in range(self.size):
                     print("#", end="")
                 print()
-

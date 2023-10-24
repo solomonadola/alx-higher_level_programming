@@ -1,26 +1,42 @@
 #!/usr/bin/python3
+""" 5-square-py : class Square"""
 
 
 class Square:
-    """Private instance attribute: size
-    Instantiation with area method prints squares """
+    """
+    Private instance attribute: size
+    Instantiation with area method prints squares
+
+    """
 
     def __init__(self, size=0):
-        """Initializes attribute size """
+        """
+        Initializes attribute size
+
+        """
         self.__size = size
 
     def area(self):
-        """Calculate area of square"""
+        """
+        Calculate area of square
+
+        """
         return (self.__size * self.__size)
 
     @property
     def size(self):
-        """Setter for square"""
+        """
+        Setter for square
+
+        """
         return self.__size
 
     @size.setter
     def size(self, value):
-        """Initializes attribute size """
+        """
+        Initializes attribute size
+
+        """
         if (type(value) is not int):
             raise TypeError("size must be an integer")
         elif value < 0:
@@ -35,4 +51,3 @@ class Square:
             print()
         if self.size <= 0:
             print()
-
