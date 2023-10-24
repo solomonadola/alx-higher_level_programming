@@ -1,4 +1,6 @@
 #!/usr/bin/python3
+""" 3-square.py: class Square """
+
 
 class Square:
     """Private instance attribute: size
@@ -15,5 +17,4 @@ class Square:
 
     def area(self):
         """Calculate area of square"""
-        return (self.__size * self.__size)
-
+        return (self.__size * self.__siz)
