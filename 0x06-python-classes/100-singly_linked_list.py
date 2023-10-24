@@ -1,4 +1,6 @@
 #!/usr/bin/python3
+""" 100-singly_linked_list.py: class Node"""
+
 
 class Node:
     """Node class"""
@@ -68,4 +70,3 @@ class SinglyLinkedList:
         if node.next_node:
             new_node.next_node = node.next_node
         node.next_node = new_node
-
