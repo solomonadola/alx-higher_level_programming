@@ -1,6 +1,5 @@
 #!/usr/bin/python3
 """
-Module 4-inherits_from.
 Finds if the object is an instance of a class that inherited
 (directly or indirectly) from the specified class.
 """

@@ -1,5 +1,5 @@
 #!/usr/bin/python3
-"""Module 101-add_attribute.
+"""
 Checks if an attribute can be added to an object.
 """
 

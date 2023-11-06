@@ -1,5 +1,5 @@
 #!/usr/bin/python3
-"""Module 10-square.
+"""
 Creates a Square class.
 """
 
