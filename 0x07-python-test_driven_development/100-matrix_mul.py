@@ -1,11 +1,14 @@
 #!/usr/bin/python3
-"""a matrix multiplication function."""
+"""
+a matrix multiplication function.
+
+"""
 
 
 def matrix_mul(m_a, m_b):
     """Multiply two matrices.
     Args:
-        m_a (list of lists of ints/floats): The first matrix.
+        m_a (list oACf lists of ints/floats): The first matrix.
         m_b (list of lists of ints/floats): The second matrix.
     Raises:
         TypeError: If either m_a or m_b is not a list of lists of ints/floats.
