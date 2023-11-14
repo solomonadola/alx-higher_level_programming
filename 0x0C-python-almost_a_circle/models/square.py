@@ -4,7 +4,6 @@ Create a Square class, having a  Rectangle super class.
 """
 
 from models.base import Base
- 
 from models.rectangle import Rectangle
 
 
