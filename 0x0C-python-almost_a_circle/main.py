@@ -1,26 +1,20 @@
-""" 2-main """
-from models.rectangle import Rectangle
+#!/usr/bin/python3
+""" 0-main """
+from models.base import Base
 
 if __name__ == "__main__":
 
-    try:
-        Rectangle(10, "2")
-    except Exception as e:
-        print("[{}] {}".format(e.__class__.__name__, e))
+    b1 = Base()
+    print(b1.id)
 
-    try:
-        r = Rectangle(10, 2)
-        r.width = -10
-    except Exception as e:
-        print("[{}] {}".format(e.__class__.__name__, e))
+    b2 = Base()
+    print(b2.id)
 
-    try:
-        r = Rectangle(10, 2)
-        r.x = {}
-    except Exception as e:
-        print("[{}] {}".format(e.__class__.__name__, e))
+    b3 = Base()
+    print(b3.id)
 
-    try:
-        Rectangle(10, 2, 3, -1)
-    except Exception as e:
-        print("[{}] {}".format(e.__class__.__name__, e))
+    b4 = Base(12)
+    print(b4.id)
+
+    b5 = Base()
+    print(b5.id)

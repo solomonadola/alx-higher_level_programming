@@ -4,10 +4,10 @@ Create a Rectangle class,
 inheriting from Parent.
 """
 import json
-from models.parent import Parent
+from models.base import Base
+ 
 
-
-class Rectangle(Parent):
+class Rectangle(Base):
     """Class describing a rectangle.
     Public instance methods:
         - area()

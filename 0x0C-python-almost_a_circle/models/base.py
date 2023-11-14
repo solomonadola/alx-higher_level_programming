@@ -5,7 +5,7 @@ import csv
 import turtle
 
 
-class Parent:
+class Base:
     """Represent the parent model.
     Represents the "parent" for all other classes
     Attributes:
@@ -22,8 +22,8 @@ class Parent:
         if id is not None:
             self.id = id
         else:
-            Parent.__nb_objects += 1
-            self.id = Parent.__nb_objects
+            Base.__nb_objects += 1
+            self.id = Base.__nb_objects
 
     @staticmethod
     def to_json_string(list_dictionaries):
@@ -47,7 +47,7 @@ class Parent:
                 jsonfile.write("[]")
             else:
                 list_dicts = [o.to_dictionary() for o in list_objs]
-                jsonfile.write(Parent.to_json_string(list_dicts))
+                jsonfile.write(Base.to_json_string(list_dicts))
 
     @staticmethod
     def from_json_string(json_string):
@@ -87,7 +87,7 @@ class Parent:
         filename = str(cls.__name__) + ".json"
         try:
             with open(filename, "r") as jsonfile:
-                list_dicts = Parent.from_json_string(jsonfile.read())
+                list_dicts = Base.from_json_string(jsonfile.read())
                 return [cls.create(**d) for d in list_dicts]
         except IOError:
             return []

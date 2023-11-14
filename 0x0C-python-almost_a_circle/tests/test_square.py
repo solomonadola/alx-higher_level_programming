@@ -8,7 +8,7 @@ and the number of the test for that task
 import unittest
 import io
 import contextlib
-from models.parent import Parent
+from models.base import Base
 from models.rectangle import Rectangle
 from models.square import Square
 
@@ -17,7 +17,7 @@ class TestSquare(unittest.TestCase):
     """Test class for Square class."""
 
     def setUp(self):
-        Parent._Base__nb_objects = 0
+        Base._Base__nb_objects = 0
 
     def test_10_0(self):
         """Test Square class: check for attributes."""
@@ -44,9 +44,9 @@ class TestSquare(unittest.TestCase):
         self.assertTrue(isinstance(s1, Rectangle))
         self.assertTrue(issubclass(Square, Rectangle))
         self.assertFalse(isinstance(Square, Rectangle))
-        self.assertTrue(isinstance(s1, Parent))
-        self.assertTrue(issubclass(Square, Parent))
-        self.assertFalse(isinstance(Square, Parent))
+        self.assertTrue(isinstance(s1, Base))
+        self.assertTrue(issubclass(Square, Base))
+        self.assertFalse(isinstance(Square, Base))
 
     def test_10_3(self):
         """Test Square class: check for missing args."""
