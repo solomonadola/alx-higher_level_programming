@@ -1,16 +1,20 @@
 #!/usr/bin/python3
+
+
 """
-This module lists all states from a database where name matches the argument.
+Lists all values in the states tables of a database where name
+matches the argument
 """
 
-import MySQLdb
 import sys
+import MySQLdb
 
 
 def list_states(username, password, database, state_name):
     """
     This function connects to a MySQL server and lists all states from a
     database where the name matches the argument.
+    It is safe from MySQL injections.
     """
     db = MySQLdb.connect(host="localhost", port=3306,
                          user=username, passwd=password, db=database)
