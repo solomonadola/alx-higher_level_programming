@@ -8,7 +8,6 @@ import MySQLdb
 import sys
 
 
-
 def list_states(username, password, database, state_name):
     """
     This function connects to a MySQL server and lists all states from a
@@ -25,7 +24,6 @@ def list_states(username, password, database, state_name):
         print(row)
     cursor.close()
     db.close()
-
 
 
 if __name__ == "__main__":
